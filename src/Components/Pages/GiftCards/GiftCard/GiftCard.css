@@ -81,4 +81,7 @@
     .see-flex img{
         border-radius: 10px;
     }
+    .gift-carousel{
+        padding: 10px 0 !important;
+    }
 }

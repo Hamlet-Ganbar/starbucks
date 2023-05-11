@@ -163,4 +163,13 @@
     .place-links a{
         width: 80%;
     }
+    .confirm-store{
+        border-radius: 50px;
+        font-size: 16px;
+        overflow: hidden;
+        padding: 10px 12px;
+        position: fixed;
+        bottom: 100px;
+        left: 50%;
+    }
 }
