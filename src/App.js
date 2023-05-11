@@ -40,7 +40,7 @@ function App() {
             ]
         },
         {
-            category: "Sibling`s Day",
+            category: "Siblings Day",
             see: '',
             cards: [
                 "https://globalassets.starbucks.com/assets/9c48c44fafd540e9b79e72508db7698e.jpg",

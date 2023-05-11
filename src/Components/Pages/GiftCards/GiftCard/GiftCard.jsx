@@ -35,7 +35,6 @@ function GiftCard() {
 
     return (
         <div className='gift-cards'>
-
             {data.slice(0, 1).map(item => {
                 return <div key={nanoid()}>
                     <div className='gift-card containerr'>

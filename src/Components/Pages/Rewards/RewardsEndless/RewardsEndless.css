@@ -86,11 +86,10 @@
         align-items: flex-start;
     }
     .endless-item h4{
-        text-align: flex-start;
-
+        text-align: start;
     }
     .endless-item p{
         width: 100%;
-        text-align: flex-start !important;
+        text-align: start !important;
     }
 }

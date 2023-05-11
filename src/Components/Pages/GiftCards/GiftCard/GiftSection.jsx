@@ -2,10 +2,10 @@ import React, { useContext } from 'react'
 import { MainContext } from '../../../Context/Context';
 import Carousel from 'react-multi-carousel'
 import { nanoid } from 'nanoid';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function GiftSection() {
-    
+
 
     const { data } = useContext(MainContext)
     const responsive = {
@@ -30,7 +30,7 @@ function GiftSection() {
             items: 1
         }
     };
- 
+
     const width = window.innerWidth
     return (
         <div className='gift-cards'>
@@ -38,7 +38,12 @@ function GiftSection() {
                 return <div key={nanoid()}>
                     <div className='gift-card containerr'>
                         <h3>{item.category}</h3>
-                        <div><Link to={`category/${item.category}`.toLowerCase().split(' ').join('-')}>{width>1024 ? `${item.see}` : 'See all'}</Link></div>
+                        <div>
+                            {width>1024? <Link to={`category/${item.category}`.toLowerCase().split(' ').join('-')}>
+                                {item.see}</Link> : <Link to={`category/${item.category}`.toLowerCase().split(' ').join('-')}>
+                                See All</Link> }
+                            
+                        </div>
                     </div>
                     <div className='gift-carousel'>
                         <Carousel

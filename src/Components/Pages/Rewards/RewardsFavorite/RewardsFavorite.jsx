@@ -68,12 +68,13 @@ function RewardsFavoriteBtn({ id, btn, data, star, setStar }) {
         setStar(data.find(item => item.id === arg))
     }
     return (
-            <button
-                className={id === star.id ? 'selected-content favorite-btn ' : "favorite-btn"}
-                onClick={() => getContent(id)}>
+        <div onClick={() => getContent(id)} className={id === star.id ? 'selected-content' : ""}>
+            <button className='favorite-btn'>
                 {btn}
-                <span className="favorite-star">★</span>
             </button>
+            <span className="favorite-star">★</span>
+        </div>
+
     )
 }
 

@@ -8,10 +8,7 @@ function GiftSeeAll() {
     const { data } = useContext(MainContext)
     
     const location = useLocation()
-   
-    // const a = location.pathname.slice(15, 20)
-    const seeFilter = data.filter(item => item.see.length > 0)
-    const giftArr = seeFilter.find(item => item.category.toLowerCase().split(' ').join('-')===location.pathname.slice(15))
+    const giftArr = data.find(item => item.category.toLowerCase().split(' ').join('-')===location.pathname.slice(15))
     return (
 
         <div className='seeAll'>

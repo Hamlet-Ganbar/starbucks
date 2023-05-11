@@ -34,11 +34,16 @@
 .favorite-btn{
     font-size: 24px;
     font-weight: 600;
-    padding: 16px 20px;
+    padding: 16px 0;
     background: transparent;
 }
+
+.selected-content{
+    border-bottom: 3px solid green;
+}
+
 .favorite-star{
-    font-size: 16px;
+    font-size: 20px;
     color: #CDAF7F;
 }
 
@@ -53,9 +58,7 @@
     width: 340px;
     text-align: left;
 }
-.selected-content{
-    border-bottom: 3px solid green;
-}
+
 
 @media only screen and (max-width:768px) {
     .favorite-content{
@@ -72,10 +75,15 @@
     .rewards-favorite .dflex{
         gap: 10px;
     }
+  
     .favorite-btn{
-        font-size: 18px;
-        padding: 12px 18px;
+        font-size: 16px;
     }
+
+    .favorite-star{
+        font-size: 14px;
+    }
+   
     
     .content-side{
         width: 100%;
