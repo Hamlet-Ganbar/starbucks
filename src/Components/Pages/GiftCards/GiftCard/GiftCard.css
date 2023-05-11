@@ -75,13 +75,22 @@
 }
 
 @media screen and (max-width:830px){
+    .see-flex{
+        text-align: center;
+    }
     .see-flex div{
-        width: 45%;
+        width: 47%;
     }
     .see-flex img{
         border-radius: 10px;
+        width: 100%;
     }
     .gift-carousel{
         padding: 10px 0 !important;
+    }
+}
+@media screen and (max-width:400px) {
+    .see-flex div{
+        width: 100%;
     }
 }
