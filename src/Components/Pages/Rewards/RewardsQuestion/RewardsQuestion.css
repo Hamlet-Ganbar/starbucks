@@ -1,0 +1,33 @@
+.question-container{
+    width: 60%;
+    margin: 0 auto;
+    padding: 7% 0;
+}
+.question-container h3{
+    font-weight: 600;
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.87);
+    padding-bottom: 20px;
+}
+.question-link pre{
+    color: #00754A !important;
+    text-decoration: underline !important;
+}
+.question-link pre:hover{
+    text-decoration: none !important;
+}
+.link-icon{
+    width: 25px;
+    color: #00754A !important;
+    margin-bottom: -7px;
+}
+
+@media screen and (max-width: 768px) {
+    .question-container{
+        width: 91%;
+    }
+    .question-container p{
+        text-align: start !important;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,84 @@
+.gift-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.gift-card h3{
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.gift-card a{
+    color: #00754A !important;
+    font-weight: 700;
+}
+.gift-carousel{
+    padding-left: 40px !important;
+}
+.card{
+    padding: 0 3%;
+    width: 100%;
+    text-align: center !important;
+}
+.carousel-item{
+    width: 100%;
+    transition: 0.2s all ease-in-out;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+.carousel-img{
+    width: 90%;
+    transition: 0.2s all ease-in-out;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+.carousel-img:hover{
+    transform: translate(0, -5%);
+}
+.carousel-item:hover{
+    transform: translate(0, -5%);
+}
+
+.react-multi-carousel-track li{
+    padding: 20px 0;
+}
+.feature-cards li[aria-hidden="true"] {
+    opacity: 0.4;
+}
+.see-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.see-flex div{
+    width: 23%;
+}
+.seeAll{
+    padding: 20px 0 60px 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.428);    
+}
+.seeAll h3{
+    padding: 40px 0 16px;
+    font-weight: 600;
+}
+.seeAll h5{
+    padding: 24px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #6B6B6B;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:830px){
+    .see-flex div{
+        width: 45%;
+    }
+    .see-flex img{
+        border-radius: 10px;
+    }
+}

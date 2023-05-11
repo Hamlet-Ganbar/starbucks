@@ -1,0 +1,250 @@
+.sign-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.528);
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 48px;
+    padding: 48px 0;
+}
+
+.sign h2 {
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.sign-box {
+    box-shadow: 0 0 5px rgba(134, 133, 133, 0.573);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.username {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    padding: 12px 16px;
+    position: relative;
+    transition: border .2s linear .2s;
+    width: 400px;
+    margin: 20px 0;
+}
+
+.username label {
+    font-size: 19px;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    cursor: text;
+    left: 12px;
+    opacity: 1;
+    padding-left: 4px;
+    padding-right: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 1ms ease-in-out 149ms;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 2;
+}
+
+.clear-sign {
+    width: 24px;
+    height: 24px;
+    overflow: visible;
+    fill: red;
+    background-color: transparent;
+}
+
+.username button {
+    background-color: transparent;
+}
+
+.username input {
+    font-size: 19px;
+}
+
+.user-label {
+    transform: translateY(-200%) !important;
+    background-color: white;
+    font-size: 14px !important;
+    color: green;
+}
+
+
+
+.keep-signed {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#signed {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#signed:checked {
+    accent-color: #006241;
+
+}
+
+.details,
+.forgot {
+    color: #006241;
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.forgot:hover {
+    text-decoration: none !important;
+}
+
+.submit {
+    text-align: right;
+}
+
+.submit button {
+    padding: 20px;
+    background: #00754a;
+    border-radius: 500px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.24), 0 0 6px rgba(0, 0, 0, 0.24);
+    color: white;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.2;
+    overflow: hidden;
+    padding: 18px 24px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    transition-property: transform, box-shadow, width, height;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    z-index: 1;
+}
+
+.show-icon {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+.clear {
+    fill: red !important;
+    margin-left: 5px;
+}
+
+.err-icon {
+    color: red;
+}
+
+.label-red {
+    color: red;
+}
+
+.sign-modal {
+    background: url("../../../Assets/modal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 30px 30px 0 30px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 140px;
+    right: 90px;
+    z-index: 99999;
+}
+
+.sign-modal p {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.modal-close {
+    padding-top: 15px;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+}
+
+.modal-close button {
+    background-color: transparent;
+    padding: 7px 16px;
+    font-weight: 600;
+    color: #006241;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.3s all;
+}
+
+.modal-close button:hover {
+    background-color: #00624116 !important;
+    border-radius: 10px;
+}
+
+
+.sign-modal-forgot {
+    background: url("../../../Assets/modal2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 30px 30px 0 30px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 90px;
+    left: 50px;
+    z-index: 99999;
+}
+
+@media screen and (max-width: 768px) {
+    .sign {
+        gap: 30px;
+    }
+
+    .sign-box {
+        box-shadow: 0 0 0 white;
+        padding: 20px 10px;
+        width: 90%;
+        position: relative;
+    }
+
+    .sign-box p {
+        text-align: left !important;
+    }
+
+    .username {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .details,
+    .forgot {
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        margin: 10px 0;
+    }
+    .submit button {
+        padding: 15px;        
+        border-radius: 500px;
+        font-size: 16px;
+        padding: 14px 20px;
+        z-index: 1;
+    }
+}

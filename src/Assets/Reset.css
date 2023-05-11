@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    /* font-size: 14px; */
+    font-family: "SoDo Sans";
+}
+li{
+    list-style: none;
+}
+a {
+    display: inline-block !important;
+    text-decoration: none !important;
+    color: inherit !important;
+}

@@ -1,0 +1,40 @@
+.previous{
+    padding: 40px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column  ;
+}
+.previous-header{
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    
+}
+.previous-title{
+    font-weight: 600;
+    font-size: 28px;
+    width: 350px;
+}
+.previous-paragraph{
+    width: 350px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.579);
+}
+.previous-btn{
+    gap: 20px;
+}
+.favorite-photo{
+    width: 60%;
+}
+@media only screen and (max-width: 768px) {
+    .previous p{
+        text-align: flex-start !important;
+    }
+
+    .previous-title{
+        font-size: 18px;
+    }
+
+}

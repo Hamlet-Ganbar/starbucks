@@ -1,0 +1,221 @@
+.store-product{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.store-menu{
+    width: 40%;
+    background: #1E3932;
+}
+.store-header{
+    padding: 50px 40px;
+    display: flex;
+    gap: 40px;
+}
+.store-menu a{
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 18px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.store-menu svg{
+    margin-right: 5px;
+    font-weight: 700 !important;
+}
+.store-info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: inherit;
+    height: 70vh;
+    padding-left: 40px;
+    color: #fff;
+}
+.store-info>div{
+    padding-top: 20px;
+    width: 100%;
+}
+.store-name{
+    display: flex !important;
+    justify-content: space-between;
+    width: 35vw;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+.store-svg svg{
+    width: 24px; 
+    height: 24px; 
+    overflow: visible; 
+    fill: currentcolor;
+}
+.store-method{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.store-content{
+    background-color: #F9F9F9;
+    position: relative;
+    min-height: 50vh;
+}
+.store-content>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+.store-content .prods{
+    width: 450px;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow:  0 0 1px black ;
+    overflow: hidden;
+    display: flex !important;
+    gap: 20px;
+}
+.prods img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.prods h3{
+    font-weight: 400;
+    font-size: 24px;
+}
+.prods p{
+    padding: 15px 0;
+}
+.operations{
+    display: flex;
+    gap: 20px;
+    color: gray;
+}
+
+.operations svg{
+    width: 24px; 
+    height: 24px; 
+    overflow: visible; 
+    fill: currentcolor;
+    cursor: pointer;
+}
+.continue-btn{
+    background: #00754a;
+    border-radius: 500px;
+    box-shadow: 0 0 6px rgba(0,0,0,.24), rgba(0,0,0,.14);
+    color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.2;
+    overflow: hidden;
+    padding: 18px 24px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    text-align: center;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    transition-duration: .2s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+    z-index: 1;
+}
+.continue-btn:active{
+    box-shadow: 0 0 6px rgba(0,0,0,.24), 0 8px 12px transparent;
+    box-shadow: 0 0 6px rgba(0,0,0,.24), 0 8px 12px rgba(0,0,0,.14);
+    transform: translateY(4px);
+    background-color: #D4E9E2;
+    color: #1F3933;
+}
+.continue-click{
+    background-color: white;
+    width: 60%;
+    transition: 0.5s all;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    z-index: 999;
+    position: relative;
+    /* width: 100%; */
+}
+.close-continue{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+    border-radius: 50%;
+    padding: 5px;
+}
+.close-continue:hover{
+    background-color: rgba(128, 128, 128, 0.429);
+}
+.clicked-continue{
+    width: inherit;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.modal-continue{
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: inherit;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 0;
+    transform: translateX(66.5%);
+}
+
+.none{
+    display: none;
+}
+.widthh{
+    width: 60%;
+}
+
+@media screen and (max-width:1024px) {
+    .store-product{
+        flex-direction: column;
+    }
+    .store-menu{
+        width: 100%;
+    }
+
+    .widthh{
+        width: 100%;
+        position: relative;
+    }
+    .store-info{
+        height: 100%;
+        padding: 0 20px 20px 40px;
+    }
+    .store-info p{
+        text-align: left !important;
+    }
+    .store-name{
+        width: 85vw;
+    }
+    .modal-continue{
+        transform: translateX(0);
+    }
+    .continue-click{
+        width: 100%;
+    }
+}

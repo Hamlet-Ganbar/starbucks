@@ -1,0 +1,65 @@
+.reward-page{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.528);
+}
+.sticky{
+    background-color: #1E3932;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+}
+.sticky h3{
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: white;
+}
+.superscript{
+    font-size: 10px;
+    margin-left: -2px;
+}
+
+
+.reward{
+    background-image: url("https://www.starbucks.com/weblx/images/rewards/hero/xl-hero-desktop_2021.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+    height: 80vh;
+    width: 100%;
+    background-color: #D4E9E2;
+}
+
+.reward-head{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    height: inherit;
+    gap: 25px;
+}
+
+.reward-head h3{
+    font-weight: 600;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.reward-head p{
+    font-size: 19px;
+}
+
+.colorGreen{
+    background-color: #00754A !important;
+    color: white;
+    font-size: 18px;
+    border: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .reward-head{        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

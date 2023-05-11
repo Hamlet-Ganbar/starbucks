@@ -1,0 +1,18 @@
+.loading-theme {
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    outline: 0;
+    width: 30%;
+    transform: translateX(-100%);
+    background-color: #00754a;
+    height: 5px;
+}
+@keyframes loading{
+    0%   {transform: translateX(0);}
+    20%   {transform: translateX(40%);}
+    40%  {transform: translateX(80%);}
+    60%  {transform: translateX(120%);}
+    80% {transform: translateX(160%);}
+    100% {transform: translateX(200%);}
+}

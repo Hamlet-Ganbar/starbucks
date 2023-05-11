@@ -1,0 +1,43 @@
+.error-page{
+    padding: 60px 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.428);    
+}
+.error-page .containerr{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.error-page .containerr h3{
+    /* width: 90%; */
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+}
+.error-page .containerr>p{
+    width: 50%;    
+    font-size: 19px;
+}
+.error-page .containerr>div{
+    display: flex;
+    align-items: center;
+}
+.error-page .containerr>div>div img{
+    width: 90%;
+}
+.error-page .containerr>div p{
+    font-size: 24px;
+}
+.error-page ul li{
+    padding: 10px;
+}
+.error-page ul li a{
+    color: #00754a !important;
+    font-weight: 600 ;
+    font-size: 16px;
+    cursor: pointer;
+}
+

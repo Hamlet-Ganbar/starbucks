@@ -1,0 +1,88 @@
+.join {
+    gap: 0;
+}
+.join h5{
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #6F6F6F;
+    padding: 48px 0 16px 0;
+}
+.join>p{
+    width: 40%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6F6F6F;
+}
+.join-box{
+    margin-top: 30px;
+    /* padding: 50px 70px !important; */
+}
+.username-boxes, .form-content{
+    width: 90%;
+    margin: 0 auto;
+}
+.show-form{
+    display: block;
+}
+.hide-form{
+    display: none;
+}
+.username-boxes .username{
+    width: 100%;
+}
+.personal-account{
+    padding-top: 30px;
+}
+h3.join-title{
+    font-weight: 600;
+    font-size: 19px;
+    padding-top: 30px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.remember{
+    width: 400px;
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.already-have{
+    padding: 40px 0;
+}
+.collect{
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+.message-mail{
+    width: 350px;
+    padding: 20px 0;
+}
+.anouncment{
+    color: #6F6F6F;
+    width: 70%;
+    padding: 20px 0 50px 35px;
+}
+.terms {
+    padding-bottom: 40px;
+}
+.terms-content{
+    width: 380px;
+    display: flex;
+}
+.terms-content input{
+    width: 50px;
+    height: 50px;
+}
+.terms-content .signed-label{
+    padding-left: 10px;
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width:550px) {
+    .remember, .terms-content{
+        width: inherit;
+    }
+}
+

@@ -1,0 +1,95 @@
+.reward-coming {
+    background: url("https://www.starbucks.com/app-assets/a0c12e777b1ed98eae96e6245c7b44ab.png")center/cover;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.coming-container {
+    background-color: #D4E9E2;
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 0;
+}
+
+.coming-stars-left,
+.coming-stars-right {
+    width: 20%;
+    height: 20%;
+    margin: 0 30px;
+}
+
+.coming-delta {
+    width: 200px;
+}
+
+.coming-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.coming-content h3 {
+    font-weight: 600;
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.coming-content p {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.5rem;
+}
+
+.coming-content p a {
+    color: #00754A !important;
+    text-decoration: underline !important;
+}
+
+.coming-content p a:hover {
+    text-decoration: none !important;
+}
+.star-res-l, .star-res-r{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .coming-content h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reward-coming {
+        background-image: none;
+        background-color: #D4E9E2;
+        padding: 30px 0;
+        overflow: hidden;
+    }
+    .coming-content h3 {
+        font-size: 19px;
+        text-align: center;
+    }
+    .coming-content p {
+        font-size: 14px;
+    }
+
+    .comeBtn {
+        font-size: 14px;
+    }
+    .coming-stars-left, .coming-stars-right{
+        display: none;
+    }
+    .star-res-l{
+        display: block;
+        align-self: flex-start;
+    }
+    .star-res-r{
+        display: block;
+        align-self: flex-end;
+    }
+}

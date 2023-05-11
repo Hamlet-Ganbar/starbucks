@@ -1,0 +1,37 @@
+.rw-f{
+    padding: 48px 0;
+}
+.rw-footer-bg{
+    background-color: #F9F9F9;
+}
+.reward-footer{
+    padding: 48px 0;
+}
+.reward-footer ul li{
+    padding-top: 8px;
+    font-size: 14px;
+    color: rgba(0,0,0,.87)
+}
+
+.reward-footer .dflex{
+    gap: 30px;
+}
+.rw-terms{
+    width: 45%;
+}
+.rw-terms h4{
+    padding: 16px 0;
+    color: #6C6C6C;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+@media  screen and (max-width:768px){
+    .reward-footer .dflex{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .rw-terms{
+        width: 100%;
+    }
+}

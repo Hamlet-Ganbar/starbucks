@@ -1,0 +1,96 @@
+.endless{
+    padding: 120px 0;
+}
+.endless>h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+}
+.endless>p{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 16px;
+    opacity: 0.95;
+}
+
+.endless>div{
+    padding-top: 48px;
+}
+
+.endless-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.endless-item, .endless-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.endless-content{
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.endless-item img{
+    width: 33%;
+    height: 100%;
+}
+.endless-item{
+    width: 33%;
+}
+.endless-item h4{
+    font-size: 19px;
+    font-weight: 600;
+}
+.endless-item p{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.endless-item button{
+    color: #00754A !important;
+    text-decoration: underline !important;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+.endless-item button:hover{
+    text-decoration: none !important;
+}
+
+@media only screen and (max-width:768px){
+    .endless>div{
+        align-items: flex-start;
+    }
+    .endless-flex{
+        flex-direction: column;
+    }
+
+    .endless-item{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .endless-item img{
+        width: 60px;
+    }
+    .endless-content{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .endless-item h4{
+        text-align: flex-start;
+
+    }
+    .endless-item p{
+        width: 100%;
+        text-align: flex-start !important;
+    }
+}

@@ -1,0 +1,31 @@
+.support-bg {
+    background-color: #EDEBE9;
+}
+.support-bg .containerr{
+    padding: 30px 0;
+}
+
+.support-bg h3{
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.support-bg p{
+    color: rgba(0, 0, 0, 0.87);
+    width: 30%;
+    padding: 20px 0;
+}
+
+.support-btns{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.support-btns button{
+    margin: 0;
+}
+@media screen and (max-width:768px) {
+    .support-bg p{
+        text-align: left !important;
+    }
+}
