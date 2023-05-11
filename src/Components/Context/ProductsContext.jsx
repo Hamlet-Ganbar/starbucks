@@ -8,7 +8,7 @@ function GlobalProducts({ children }) {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        fetch("http://localhost:4000/products")
+        fetch(("https://raw.githubusercontent.com/Hamlet-Ganbar/starbucks/main/src/AllData.json"))
             .then(response => {
                 if (response.status === 404) {
                     navigate("menu/404")
@@ -17,8 +17,8 @@ function GlobalProducts({ children }) {
                     return response.json()
                 }
             })
-            .then(data => {setTimeout(()=>{setData(data); setLoading(false)}, 1000)})
-    }, [])
+            .then(data => {setTimeout(()=>{setData(data.products); setLoading(false)}, 1000)})
+    }, [navigate])
 
         
     let checkStorage = () => {

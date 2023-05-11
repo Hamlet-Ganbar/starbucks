@@ -18,7 +18,8 @@ function Product() {
     const [sized, setSized] = useState(0)
     const { loading } = useContext(ProductsContext)
     
-    const findProd = data.find(item => item.id == prod)
+    const findProd = data.find(item => item.id === +prod)
+    console.log(prod);
     const selectSize = (e) => {
         setSized(e)
     }

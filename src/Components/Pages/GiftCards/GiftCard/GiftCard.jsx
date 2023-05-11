@@ -9,8 +9,6 @@ import 'react-multi-carousel/lib/styles.css';
 function GiftCard() {
     const { data } = useContext(MainContext)
 
-    let a = window.innerWidth
-
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.

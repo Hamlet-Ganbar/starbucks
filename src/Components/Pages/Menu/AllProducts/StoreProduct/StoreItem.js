@@ -1,7 +1,7 @@
-import { Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import { AiOutlinePlusCircle } from 'react-icons/ai'
 import { AiOutlineMinusCircle } from 'react-icons/ai'
-import { useEffect,useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 import { nanoid } from "nanoid"
 
 function StoreItem({ img, name, size, star, id, dataid, store, setStore }) {
@@ -22,22 +22,26 @@ function StoreItem({ img, name, size, star, id, dataid, store, setStore }) {
         localStorage.setItem('productBasket', JSON.stringify(basketStore))
     }
 
-    const deleteHandle = (e) => {
+    const deleteHandle = () => {
         const b = basketStore.find(item => item.id === id)?.id;
         let arr = basketStore.filter(item => item.id !== b)
         setStore(arr)
         localStorage.setItem('productBasket', JSON.stringify(arr))
     }
 
+    // const editHandler = () => {
+    //     let b = `/menu/product/${basketStore.find(item => item.name === name)?.dataid}`
+    //     setroad(b)
+    // }
 
-    const editHandler = () => {
+    const editHandler = useCallback(() => {
         let b = `/menu/product/${basketStore.find(item => item.name === name)?.dataid}`
         setroad(b)
-    }
+    }, [basketStore, name])
 
     useEffect(() => {
         editHandler()
-    }, [road])
+    }, [road, editHandler])
 
 
     return (

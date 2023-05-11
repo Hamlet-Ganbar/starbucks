@@ -1,13 +1,11 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import './SignNow.css'
 import { nanoid } from 'nanoid'
 import SignForm from './SignForm'
 import SignModal from './SignModal'
 import ForgotModal from './ForgotModal'
-import { ProductsContext } from '../../Context/ProductsContext'
 
 function SignNow() {
-    const {login} =useContext(ProductsContext)
     const [modal, setModal] = useState(false)
     const modalview = () => {
         setModal(!modal)

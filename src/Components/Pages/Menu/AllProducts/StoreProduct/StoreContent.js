@@ -5,7 +5,6 @@ import StoreItem from './StoreItem'
 import ContinueHandle from './ContinueHandle'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import { nanoid } from 'nanoid'
-import { useMemo, useState } from 'react'
 
 function StoreContent({show, setShow, store, setStore}) {
 
@@ -17,11 +16,10 @@ function StoreContent({show, setShow, store, setStore}) {
         <>
             <div className='store-content'>
                 <div>
-                    {useMemo(() => store.map(item => <StoreItem key={nanoid()} {...item} store={store} setStore={setStore} />), [store])}
+                    {store.map(item => <StoreItem key={nanoid()} {...item} store={store} setStore={setStore} />)}
                 </div>
 
                 <button onClick={continueHandler} className='continue-btn'>Continue</button>
-
             </div>
             <div>
                 <FooterResponsive />
