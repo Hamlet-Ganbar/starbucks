@@ -21,7 +21,7 @@ function AllProducts() {
         <><div>
           <div className="containerr all-data">
             <Category />
-            <div style={{ width: '80%' }}>
+            <div className='product-outlet'>
               <Outlet />
             </div>
           </div>

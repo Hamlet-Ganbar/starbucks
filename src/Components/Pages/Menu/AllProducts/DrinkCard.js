@@ -9,7 +9,6 @@ function DrinkCard({ img, name,id }) {
                 <div className='drink-img'><img src={img} alt={name} /></div>
                 <p>{name}</p>
             </Link>
-
         </div>
     )
 }

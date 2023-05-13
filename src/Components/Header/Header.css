@@ -1,4 +1,4 @@
-#root{
+#root {
     overflow: hidden;
 }
 
@@ -7,7 +7,8 @@ header {
     line-height: 7;
     position: relative;
 }
-.scroll-lock{
+
+.scroll-lock {
     overflow-y: hidden;
 }
 
@@ -78,7 +79,10 @@ header {
 
 .findStore {
     transition: all .2s ease;
+    display: flex;
+    align-items: center;
     gap: 10px;
+    padding-top: 12px;
 }
 
 .findStore b {
@@ -146,7 +150,7 @@ header {
 }
 
 
-.overlay-page{
+.overlay-page {
     position: absolute;
     inset: 0px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -154,14 +158,15 @@ header {
     visibility: hidden;
     transition: all 0.4s ease 0s;
 }
-.menu-chevron{
+
+.menu-chevron {
     display: none;
 }
 
 
 
 @media screen and (max-width: 792px) {
-  
+
     .header {
         padding: 15px 0;
         line-height: normal;
@@ -171,10 +176,12 @@ header {
         display: block;
         z-index: 999999999;
     }
-    .overlay-open{
+
+    .overlay-open {
         opacity: 1;
         visibility: visible;
     }
+
     .nav {
         flex-direction: column;
         justify-content: flex-start !important;
@@ -189,7 +196,7 @@ header {
         top: 80px;
         right: 0;
         transition: 0.3s ease-in-out;
-        z-index: 999997;   
+        z-index: 999997;
     }
 
     .nav-close {
@@ -222,7 +229,8 @@ header {
         width: 40px !important;
         height: 40px !important;
     }
-    .menu-chevron{
+
+    .menu-chevron {
         display: inline-block;
         font-size: 18px;
         margin-right: 20px;
@@ -230,10 +238,12 @@ header {
         cursor: pointer;
         transition: 0.3s all ease-in-out;
     }
-    .menu-chevron-open{
+
+    .menu-chevron-open {
         transform: rotate(0);
     }
-    .menu-chevron-close{
+
+    .menu-chevron-close {
         transform: rotate(180deg);
     }
 

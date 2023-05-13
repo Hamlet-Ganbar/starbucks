@@ -13,7 +13,7 @@ function HeaderNavRight() {
         <div onClick={closeBar} className='dflex between nav-right'>
             <div className='find-nav'>
                 <NavLink className='find-nav' to='store-locator'>
-                    <div className='findStore dflex between'>
+                    <div className='findStore'>
                         <IoLocation size={20} />
                         <b className='find '>Find a store</b>
                     </div>
